@@ -1,0 +1,34 @@
+TODO
+
+* Learn how-to gen. adoc?
+
+* Requirements, re-confirm: ID, additional longer metadata doc like who to contact, meta data end-user contribute, translations, static API (last)
+
+* POC Xtend alternative, using << >> and LAZY evaluation of passed arguments .. make it possible to use from Java??
+
+* Learn: Locale, from where system wide?  Cannot pass it to every Logger..
+
+* Bug, must have: https://issues.jboss.org/browse/LOGTOOL-106
+
+* Learn: understand what is in target/generated-translation-files/org/jboss/logging.. do TDD and create test failing in Eclipse if this should also be on classpath, use <goal>add-resource</goal> from http://www.mojohaus.org/build-helper-maven-plugin/usage.html
+
+* Enhancement idea: @LogMessage level() from method name prefix
+
+* Enhancement idea: Intro. @LogMessage(s?) on class instead of method, just for readability
+
+* Enhancement idea: Message format {} like slf4j?
+ 
+* Enhancement idea: Message format default format = Format.MESSAGE_FORMAT how-to? Another annotation?
+
+* Demo video: show msg validation.. better with PRINTF than MESSAGE_FORMAT, it seems. 
+
+* Bug: This should be invalid, no?
+    @Message(id = Message.INHERIT, format = Format.MESSAGE_FORMAT, value = "There are {3} diesel trains on track {2}.")
+    void nbDieselTrains(int number, String track);
+
+* Enhancement idea: Checkstyle check rules for project specific conventions; must have ID, never Message id none, incl. no LOGGER field, no extends BasicLogger
+
+
+DONE
+
+https://github.com/jamezp/jboss-logging-example/pulls?q=is%3Apr+author%3Avorburger
