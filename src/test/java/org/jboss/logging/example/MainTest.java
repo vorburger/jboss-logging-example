@@ -35,5 +35,8 @@ public class MainTest {
     @Test
     public void testMain() throws Exception {
         Main.testLocale(Locale.FRANCE);
+
+        // required for logback-beagle http://logback.qos.ch/beagle/ to have a chance.. @see https://github.com/qos-ch/logback-beagle/issues/6
+        Thread.sleep(500);
     }
 }
