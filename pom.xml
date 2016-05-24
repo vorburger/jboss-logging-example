@@ -32,12 +32,6 @@
     <name>jboss-logging-example</name>
     <url>http://maven.apache.org</url>
 
-    <parent>
-        <groupId>org.jboss</groupId>
-        <artifactId>jboss-parent</artifactId>
-        <version>6</version>
-    </parent>
-
     <properties>
         <version.org.jboss.logging>3.1.0.GA</version.org.jboss.logging>
     </properties>
@@ -76,6 +70,11 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.5.1</version>
                 <configuration>
+                    <showDeprecation>true</showDeprecation>
+                    <showWarnings>true</showWarnings>
+                    <!-- annotationProcessorPaths only works 1.6+ and would be ignored in default 1.5 -->                    
+                    <source>1.6</source>
+                    <target>1.6</target>
                     <annotationProcessorPaths>
                       <annotationProcessorPath>
                         <groupId>org.jboss.logging</groupId>
