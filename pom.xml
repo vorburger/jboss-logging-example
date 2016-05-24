@@ -30,11 +30,11 @@
 
     <name>jboss-logging-example</name>
 
-    <parent>
+    <!-- <parent>
         <groupId>org.jboss</groupId>
         <artifactId>jboss-parent</artifactId>
         <version>6</version>
-    </parent>
+    </parent> -->
 
     <properties>
         <version.org.jboss.logging>3.1.0.GA</version.org.jboss.logging>
@@ -105,6 +105,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
+                <version>2.3.1</version>
                 <configuration>
                     <archive>
                         <manifest>
