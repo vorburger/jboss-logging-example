@@ -55,15 +55,6 @@
             <version>1.1.7</version>
         </dependency>
 
-        <!--
-            Testing
-        <dependency>
-            <groupId>org.jboss.logmanager</groupId>
-            <artifactId>jboss-logmanager</artifactId>
-            <version>1.2.2.GA</version>
-            <scope>test</scope>
-        </dependency>
-        -->
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
