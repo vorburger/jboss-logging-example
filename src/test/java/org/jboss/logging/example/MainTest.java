@@ -42,5 +42,8 @@ public class MainTest {
         String msg = trains.getMessage(Locale.FRANCE);
         System.out.println(msg);
         Assert.assertTrue(msg.contains("TRN000123"));
+
+        // required for logback-beagle http://logback.qos.ch/beagle/ to have a chance.. @see https://github.com/qos-ch/logback-beagle/issues/6
+        Thread.sleep(500);
     }
 }

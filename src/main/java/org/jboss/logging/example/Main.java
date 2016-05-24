@@ -21,6 +21,8 @@
  */
 package org.jboss.logging.example;
 
+import org.slf4j.LoggerFactory;
+
 import java.util.Locale;
 
 /**
@@ -31,9 +33,17 @@ import java.util.Locale;
  */
 public class Main {
 
+    private static final org.slf4j.Logger logger = LoggerFactory.getLogger(Main.class);
+
     public static void main(String[] args) throws Exception {
         System.out.println(new Trains().getMessage(Locale.FRANCE));
+        testSlf4j();
         new Trains().demoLocalizedLoggingWithMessages();
+        testSlf4j();
+    }
+
+    private static void testSlf4j() {
+        logger.info("Yo, from testSlf4j()");
     }
 
 }
