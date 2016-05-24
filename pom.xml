@@ -19,7 +19,6 @@
   ~ Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA
   ~ 02110-1301 USA, or see the FSF site: http://www.fsf.org.
   -->
-
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
@@ -31,7 +30,7 @@
     <name>jboss-logging-example</name>
 
     <properties>
-        <version.org.jboss.logging>3.1.0.GA</version.org.jboss.logging>
+        <version.org.jboss.logging>3.3.0.Final</version.org.jboss.logging>
     </properties>
     
     <dependencies>
@@ -79,7 +78,7 @@
                       <annotationProcessorPath>
                         <groupId>org.jboss.logging</groupId>
                         <artifactId>jboss-logging-processor</artifactId>
-                        <version>1.0.0.Final</version>
+                        <version>2.0.1.Final</version>
                       </annotationProcessorPath>
                       <annotationProcessorPath>
                         <groupId>org.jboss.logging</groupId>
