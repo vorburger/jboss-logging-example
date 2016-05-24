@@ -30,6 +30,7 @@
     <name>jboss-logging-example</name>
 
     <properties>
+        <version.org.jboss.annotations-n-processor>2.0.1.Final</version.org.jboss.annotations-n-processor>
         <version.org.jboss.logging>3.3.0.Final</version.org.jboss.logging>
     </properties>
     
@@ -37,6 +38,11 @@
         <!--
             JBoss Logging
         -->
+        <dependency>
+            <groupId>org.jboss.logging</groupId>
+            <artifactId>jboss-logging-annotations</artifactId>
+            <version>${version.org.jboss.annotations-n-processor}</version>
+        </dependency>
         <dependency>
             <groupId>org.jboss.logging</groupId>
             <artifactId>jboss-logging</artifactId>
@@ -78,7 +84,7 @@
                       <annotationProcessorPath>
                         <groupId>org.jboss.logging</groupId>
                         <artifactId>jboss-logging-processor</artifactId>
-                        <version>2.0.1.Final</version>
+                        <version>${version.org.jboss.annotations-n-processor}</version>
                       </annotationProcessorPath>
                       <annotationProcessorPath>
                         <groupId>org.jboss.logging</groupId>
