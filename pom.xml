@@ -30,12 +30,6 @@
 
     <name>jboss-logging-example</name>
 
-    <!-- <parent>
-        <groupId>org.jboss</groupId>
-        <artifactId>jboss-parent</artifactId>
-        <version>6</version>
-    </parent> -->
-
     <properties>
         <version.org.jboss.logging>3.1.0.GA</version.org.jboss.logging>
     </properties>
